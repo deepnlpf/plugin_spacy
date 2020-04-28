@@ -1,0 +1,49 @@
+{
+    "manifest_version": "1",
+    "name": "SpaCy",
+    "version": "v2.1",
+    "keyname": "spacy",
+    "description": "SpaCy é uma biblioteca de software de código aberto para processamento avançado de linguagem natural, escrita nas linguagens de programação Python e Cython.",
+    "site": "https://spacy.io",
+    "author": "RodriguesFAS",
+    "category": "pln",
+    "license": "MIT",
+    "analysis": [{
+        "lexical": [{
+                "name": "POS",
+                "keyname": "pos",
+                "description": "The simple part-of-speech tag."
+            },
+            {
+                "name": "Tag",
+                "keyname": "tag",
+                "description": "The detailed part-of-speech tag."
+            },
+            {
+                "name": "Shape",
+                "keyname": "shape",
+                "description": "The word shape – capitalization, punctuation, digits."
+            },
+            {
+                "name": "Is Alpha",
+                "keyname": "is_alpha",
+                "description": "Is the token an alpha character?"
+            },
+            {
+                "name": "Is Title",
+                "keyname": "is_title",
+                "description": "Is the token in titlecase?"
+            },
+            {
+                "name": "Like Num",
+                "keyname": "like_num",
+                "description": "Does the token represent a number? e.g. “10.9”, “10”, “ten”, etc."
+            },
+            {
+                "name": "Noun Chunks",
+                "keyname": "noun_chunks",
+                "description": ""
+            }
+        ]
+    }]
+}
