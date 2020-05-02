@@ -1,2 +1,2 @@
 # Install Stanza NLP
-pip install stanza -U
+pip install -U spacy
