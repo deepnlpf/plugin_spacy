@@ -1,2 +1,2 @@
-# Install Stanza NLP
+# Install SpaCy
 pip install -U spacy
