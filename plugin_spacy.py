@@ -5,7 +5,6 @@ import spacy, json
 
 from deepnlpf.core.iplugin import IPlugin
 from deepnlpf.core.boost import Boost
-from deepnlpf.core.output_format import OutputFormat
 
 class Plugin(IPlugin):
 
@@ -48,9 +47,8 @@ class Plugin(IPlugin):
             
             data_tokens_list.append(data_token)
         
+        list_chunks = list()
         if "noun_chunks" in self._pipeline:
-            list_chunks = list()
-
             for chunk in doc.noun_chunks:
                 data_chunk = {}
                 data_chunk['text'] = chunk.text
@@ -72,10 +70,5 @@ class Plugin(IPlugin):
 
         return json_data_result
 
-    def out_format(self, annotation):
-        return OutputFormat().doc_annotation(
-            _id_pool=self._id_pool, 
-            _id_dataset=self._document['_id_dataset'],
-            _id_document=self._document['_id'], 
-            tool="spacy", 
-            annotation=annotation)
+    def out_format(self, doc):
+        pass

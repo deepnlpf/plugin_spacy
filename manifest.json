@@ -1,7 +1,7 @@
 {
-    "manifest_version": "1",
+    "manifest_version": "1.0.0",
     "name": "SpaCy",
-    "version": "v2.1",
+    "version": "2.1",
     "keyname": "spacy",
     "description": "SpaCy é uma biblioteca de software de código aberto para processamento avançado de linguagem natural, escrita nas linguagens de programação Python e Cython.",
     "site": "https://spacy.io",
